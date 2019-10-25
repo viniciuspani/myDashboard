@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -13,15 +13,16 @@
     <link rel="stylesheet" href="../assets/css/adminlte.min.css">
     <!-- Google Font: Source Sans Pro -->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+    <!-- Meu Css -->
+    <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 
 <body class="hold-transition sidebar-mini">
-
     <div class="wrapper">
 
-        <!-- #region Navbar -->
+        <!--#region Navbar -->
         <nav class="main-header navbar navbar-expand navbar-white navbar-light">
-            <!--  navbar  -->
+            <!-- Left navbar links -->
             <ul class="navbar-nav">
                 <li class="nav-item">
                     <a class="nav-link" data-widget="pushmenu" href="#"><i class="fas fa-bars"></i></a>
@@ -172,7 +173,7 @@
                     <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu"
                         data-accordion="false">
                         <!-- Add icons to the links using the .nav-icon class
-                             with font-awesome or any other icon font library -->
+                     with font-awesome or any other icon font library -->
                         <li class="nav-item has-treeview menu-open">
                             <a href="#" class="nav-link active">
                                 <i class="nav-icon fas fa-tachometer-alt"></i>
@@ -212,8 +213,7 @@
             <!-- /.sidebar -->
         </aside>
         <!--#endregion-->
-
-        <!--  #region Content Wrapper. Contains page content -->
+        <!-- #region Content Wrapper. Contains page content -->
         <div class="content-wrapper">
             <!-- Content Header (Page header) -->
             <div class="content-header">
@@ -231,16 +231,16 @@
                     </div><!-- /.row -->
                 </div><!-- /.container-fluid -->
             </div>
-            <!-- #endregion/.content-header -->
+            <!-- /.content-header -->
 
-            <!--#region Main content -->
+            <!-- Main content -->
             <div class="content">
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-md-12">
                             <div class="card card-primary">
                                 <div class="card-header">
-                                    <h3 class="card-title">Cadastro Aluno</h3>
+                                    <h3 class="card-title">Cadastrar aluno</h3>
 
                                     <div class="card-tools">
                                         <button type="button" class="btn btn-tool" data-card-widget="collapse"><i
@@ -251,25 +251,86 @@
                                 </div>
                                 <!-- /.card-header -->
                                 <div class="card-body">
-                                        <div class="col-md-4">
+                                    <form id="formAdicionarAluno">
+                                        <div class="row">
+
+                                            <div class="col-sm-12 col-md-4 col-lg-5">
                                                 <div class="form-group">
-                                                    <label for="nomeAluno">Nome do aluno</label>
-                                                    <input type="text" id="nomeAluno" class="form-control">
+                                                    <labe for="nomeAluno">Nome do aluno</labe>
+                                                    <input id="nomeAluno" type="text" class="form-control" required>
                                                 </div>
                                             </div>
+                                            <div class="col-sm-12 col-md-2 col-lg-1">
+                                                <div class="form-group">
+                                                    <labe for="primeiroBi">1º Bim</labe>
+                                                    <input id="primeiroBi" type="number" class="form-control" required>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12 col-md-2 col-lg-1">
+                                                <div class="form-group">
+                                                    <labe for="segundoBi">2º Bim</labe>
+                                                    <input id="segundoBi" type="number" class="form-control" required>
+                                                </div>
+                                            </div>
+                                           <div class="col-sm-12 col-md-2 col-lg-1">
+                                                <div class="form-group">
+                                                    <labe for="terceiroBi">3º Bim</labe>
+                                                    <input id="terceiroBi" type="number" class="form-control" required>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12 col-md-2 col-lg-1">
+                                                <div class="form-group">
+                                                    <labe for="quartoBi">4º Bim</labe>
+                                                    <input id="quartoBi" type="number" class="form-control" required>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12 col-md-3 col-lg-3">
+                                                <div class="form-group pt-24">
+                                                    <button type="button" class="btn btn-primary"
+                                                        onclick="adicionarAluno()">
+                                                        <i class="fas fa-plus"></i> Adicionar
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="card-body table-responsive p-0">
+                                                <table id="listagemAlunos" class="table table-hover">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Aluno</th>
+                                                            <th>1Bim</th>
+                                                            <th>2Bim</th>
+                                                            <th>3Bim</th>
+                                                            <th>4Bim</th>
+                                                            <th>Total</th>
+                                                            <th>Média</th>
+                                                            <th>Situação</th>
+                                                            <th>Ações</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>lsjflksdjfs</td>
+                                                            <td>asdhsakjdhasdh</td>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                                 <!-- /.card-body -->
                             </div>
                         </div>
-                        
+
                     </div>
                     <div class="row"></div>
-
-                </div><!-- /.container-fluid -->
+                </div>
             </div>
-            <!-- #endregion /.content -->
         </div>
-        <!--  /.content-wrapper -->
+        <!-- #endregion /.content-wrapper -->
 
         <!-- #region Control Sidebar -->
         <aside class="control-sidebar control-sidebar-dark">
@@ -279,9 +340,9 @@
                 <p>Sidebar content</p>
             </div>
         </aside>
-        <!--#endregion /.control-sidebar -->
+        <!-- #endregion /.control-sidebar -->
 
-        <!--#region Footer -->
+        <!-- #region Main Footer -->
         <footer class="main-footer">
             <!-- To the right -->
             <div class="float-right d-none d-sm-inline">
@@ -291,16 +352,11 @@
             <strong>Copyright &copy; 2014-2019 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights
             reserved.
         </footer>
-        <!--endregion Footer-->
+        <!--#endregion -->
     </div>
-    <!-- ./wrapper -->
 
 
-
-
-
-
-    <!--#region scripts requeridos -->
+    <!--#region Scripts Requeridos -->
 
     <!-- jQuery -->
     <script src="../assets/js/jquery.min.js"></script>
@@ -308,8 +364,9 @@
     <script src="../assets/js/bootstrap.bundle.min.js"></script>
     <!-- AdminLTE App -->
     <script src="../assets/js/adminlte.min.js"></script>
-
-    <!-- #endregion -->
+    <script src="../assets/js/jquery.validate.js"></script>
+    <script src="../assets/js/alunos.js"></script>
+    <!--#endregion-->
 </body>
 
 </html>
