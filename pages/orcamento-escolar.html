@@ -275,20 +275,8 @@
 
                                             <div class="col-sm-12 col-md-3 col-lg-3">
                                                 <div class="form-group">
-                                                    <labe for="materialEscolar">Material escolar</labe>
-                                                    <select class="form-control" id="materialEscolar">
-                                                        <option></option>
-                                                        <option>Lápis</option>
-                                                        <option>Borracha</option>
-                                                        <option>Caderno</option>
-                                                        <option>Caneta Esferográfica preta</option>
-                                                        <option>Caneta Esferográfica azul</option>
-                                                        <option>Apontador</option>
-                                                        <option>Estojo</option>
-                                                        <option>Cola</option>
-                                                        <option>Caixa lápis de cor (12 unidades)</option>
-                                                        <option>Regua</option>
-                                                        <option>Tesoura sem ponta</option>
+                                                    <labe for="materialSelect">Material escolar</labe>
+                                                    <select class="form-control" id="materialSelect">                                                        
                                                     </select>
                                                 </div>
                                             </div>
@@ -311,8 +299,8 @@
                                             </div>
                                             <div class="col-sm-12 col-md-3 col-lg-3">
                                                     <div class="form-group pt-24">
-                                                        <button type="button" class="btn btn-primary"
-                                                            onclick="adicionarAluno()">
+                                                        <button disabled type="button" class="btn btn-primary"
+                                                            onclick="adicionarMaterial()">
                                                             <i class="fas fa-plus"></i> Adicionar
                                                         </button>
                                                     </div>
@@ -399,7 +387,7 @@
     <!-- AdminLTE App -->
     <script src="../assets/js/adminlte.min.js"></script>
     <script src="../assets/js/jquery.validate.js"></script>
-    <script src="../assets/js/alunos.js"></script>
+    <script src="../assets/js/orcamento-escolar.js"></script>
     <!--#endregion-->
 </body>
 
