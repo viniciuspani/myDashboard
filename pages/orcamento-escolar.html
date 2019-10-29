@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>my Dashboard</title>
+    <title>my Dashboard - Orçamento-Escolar</title>
 
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="../assets/css/fontawesome-free.css">
@@ -31,13 +31,7 @@
                     <a href="../index.html" class="nav-link">Home</a>
                 </li>
                 <li class="nav-item d-none d-sm-inline-block">
-                    <a href="../pages/alunos.html" class="nav-link">Alunos</a>
-                </li>
-                <li class="nav-item d-none d-sm-inline-block">
-                    <a href="../pages/orcamento-escolar.html" class="nav-link nav-link active">Orçamento Escolar</a>
-                </li>
-                <li class="nav-item d-none d-sm-inline-block">
-                    <a href="../login.html" class="nav-link">Sair</a>
+                    <a href="#" class="nav-link">Contact</a>
                 </li>
             </ul>
 
@@ -181,36 +175,33 @@
                         <!-- Add icons to the links using the .nav-icon class
                      with font-awesome or any other icon font library -->
                         <li class="nav-item has-treeview menu-open">
-                            <a href="#" class="nav-link active">
+                            <a href="../index.html" class="nav-link">
                                 <i class="nav-icon fas fa-tachometer-alt"></i>
                                 <p>
-                                    Starter Pages
+                                    Dashboard
                                     <i class="right fas fa-angle-left"></i>
                                 </p>
                             </a>
                             <ul class="nav nav-treeview">
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link active">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Active Page</p>
+                                    <a href="../pages/alunos.html" class="nav-link ">
+                                        <i class="fas fa-user nav-icon"></i>
+                                        <p>Alunos</p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Inactive Page</p>
+                                    <a href="../pages/orcamento-escolar.html" class="nav-link active">
+                                        <i class="fas fa-money-bill-alt nav-icon"></i>
+                                        <p>Orçamento Escolar</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="../login.html" class="nav-link">
+                                        <i class="fas fa-door-open nav-icon"></i>
+                                        <p>Sair</p>
                                     </a>
                                 </li>
                             </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">
-                                <i class="nav-icon fas fa-th"></i>
-                                <p>
-                                    Simple Link
-                                    <span class="right badge badge-danger">New</span>
-                                </p>
-                            </a>
                         </li>
                     </ul>
                 </nav>
@@ -226,12 +217,12 @@
                 <div class="container-fluid">
                     <div class="row mb-2">
                         <div class="col-sm-6">
-                            <h1 class="m-0 text-dark">Starter Page</h1>
+                            <h1 class="m-0 text-dark">Orçamento Escolar</h1>
                         </div><!-- /.col -->
                         <div class="col-sm-6">
                             <ol class="breadcrumb float-sm-right">
-                                <li class="breadcrumb-item"><a href="#">Home</a></li>
-                                <li class="breadcrumb-item active">Starter Page</li>
+                                <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+                                <li class="breadcrumb-item active">orçamento escolar</li>
                             </ol>
                         </div><!-- /.col -->
                     </div><!-- /.row -->
@@ -246,7 +237,7 @@
                         <div class="col-md-12">
                             <div class="card card-primary">
                                 <div class="card-header">
-                                    <h3 class="card-title">Cadastrar aluno</h3>
+                                    <h3 class="card-title">Orçamento prévio de material escolar</h3>
 
                                     <div class="card-tools">
                                         <button type="button" class="btn btn-tool" data-card-widget="collapse"><i
@@ -257,49 +248,86 @@
                                 </div>
                                 <!-- /.card-header -->
                                 <div class="card-body">
-                                    <form id="formAdicionarAluno">
+                                    <form id="formInfoAluno">
                                         <div class="row">
 
-                                            <div class="col-sm-12 col-md-4 col-lg-5">
+                                            <div class="col-sm-12 col-md-3 col-lg-4">
                                                 <div class="form-group">
                                                     <labe for="nomeAluno">Nome do aluno</labe>
                                                     <input id="nomeAluno" type="text" class="form-control" required>
                                                 </div>
                                             </div>
-                                            <div class="col-sm-12 col-md-2 col-lg-1">
+                                            <div class="col-sm-12 col-md-2 col-lg-2">
                                                 <div class="form-group">
-                                                    <labe for="primeiroBi">1º Bim</labe>
-                                                    <input id="primeiroBi" type="number" class="form-control" required>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-12 col-md-2 col-lg-1">
-                                                <div class="form-group">
-                                                    <labe for="segundoBi">2º Bim</labe>
-                                                    <input id="segundoBi" type="number" class="form-control" required>
-                                                </div>
-                                            </div>
-                                           <div class="col-sm-12 col-md-2 col-lg-1">
-                                                <div class="form-group">
-                                                    <labe for="terceiroBi">3º Bim</labe>
-                                                    <input id="terceiroBi" type="number" class="form-control" required>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-12 col-md-2 col-lg-1">
-                                                <div class="form-group">
-                                                    <labe for="quartoBi">4º Bim</labe>
-                                                    <input id="quartoBi" type="number" class="form-control" required>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-12 col-md-3 col-lg-3">
-                                                <div class="form-group pt-24">
-                                                    <button type="button" class="btn btn-primary"
-                                                        onclick="adicionarAluno()">
-                                                        <i class="fas fa-plus"></i> Adicionar
-                                                    </button>
+                                                    <labe for="valorGastar">Posso gastar até</labe>
+                                                    <div class="input-group mb-3">
+                                                        <div class="input-group-prepend">
+                                                            <span class="input-group-text">@</span>
+                                                        </div>
+                                                        <input id="valorGastar" type="text" class="form-control" required>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </form>
+                                    <form id="formMaterialAluno">
+                                        <div class="row">
+
+                                            <div class="col-sm-12 col-md-3 col-lg-3">
+                                                <div class="form-group">
+                                                    <labe for="materialEscolar">Material escolar</labe>
+                                                    <select class="form-control" id="materialEscolar">
+                                                        <option></option>
+                                                        <option>Lápis</option>
+                                                        <option>Borracha</option>
+                                                        <option>Caderno</option>
+                                                        <option>Caneta Esferográfica preta</option>
+                                                        <option>Caneta Esferográfica azul</option>
+                                                        <option>Apontador</option>
+                                                        <option>Estojo</option>
+                                                        <option>Cola</option>
+                                                        <option>Caixa lápis de cor (12 unidades)</option>
+                                                        <option>Regua</option>
+                                                        <option>Tesoura sem ponta</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12 col-md-3 col-lg-2">
+                                                <div class="form-group">
+                                                    <labe for="quantidadeMaterial">Quantidade</labe>
+                                                    <input id="quantidadeMaterial" type="text" class="form-control" required>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12 col-md-3 col-lg-2">
+                                                <div class="form-group">
+                                                    <labe for="precoMaterial">Peço unitário</labe>
+                                                    <div class="input-group mb-3">
+                                                        <div class="input-group-prepend">
+                                                            <span class="input-group-text">$</span>
+                                                        </div>
+                                                        <input id="precoMaterial" type="text" class="form-control" required>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12 col-md-3 col-lg-3">
+                                                    <div class="form-group pt-24">
+                                                        <button type="button" class="btn btn-primary"
+                                                            onclick="adicionarAluno()">
+                                                            <i class="fas fa-plus"></i> Adicionar
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                        </div>
+                                    </form>
+                                    <div class="row">
+
+                                            <div class="col-sm-12 col-md-3 col-lg-4">
+                                                <h2><i class="fas fa-th-list"></i> Lista de Materiais do aluno: </h2>
+                                        </div>
+                                    </div>
+
+
+
                                     <div class="row">
                                         <div class="col-sm-12">
                                             <div class="card-body table-responsive p-0">
