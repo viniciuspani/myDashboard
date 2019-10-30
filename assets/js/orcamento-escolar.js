@@ -13,11 +13,12 @@ var nomeAlunoMat = document.getElementById('nomeAlunoMat');
 var valorGastar = document.getElementById('valorGastar');
 
 
-function adicionarMaterial() {
-  $("nomeAlunoMat").on("focus", function () {
-    $("#adicionarDados").attr("disabled", true);
-  }
-  $("valorGastar").on("focus", function () {
-    $("adicionarDados").attr("disabled", true);
-  }
-  )}
+$(function(){
+
+  $("nomeAlunoMat").focusin(function(){
+    
+
+  });
+
+});
+  
