@@ -8,15 +8,35 @@ listaMaterial.forEach((material) => {
   materialSelect.options[materialSelect.options.length] = option;
 });
 
-function validarFormMat() {
-  return $('#nomeAluno').valid() &&
-         $("#valorGastar").valid() &&
-         $("#quantidadeMaterial").valid() &&
-         $("#precoMaterial").valid();         
-}
-
 const nomeAlunoMat = document.getElementById('nomeAlunoMat');
 const valorGastar = document.getElementById('valorGastar');
+
+function validarFormMat() {
+  if( $('#nomeAluno').valid() &&
+         $("#valorGastar").valid()){
+          $('#adicionarDados').attr('disabled', false);
+         }else
+         {
+          $('#adicionarDados').attr('disabled', true);
+         }
+                 
+}
+
+/*
+function feedbackFormValidacaoMat() {
+
+  if ($('nomeAluno' && 'valorGastar').valid()) {
+      $('#adicionarDados').removeAttr('disabled');
+  } else {
+      $('#adicionarDados').atrr('disabled');
+  }
+
+
+
+
+
+
+
 
 
 $(function(){
@@ -28,3 +48,4 @@ $(function(){
 
 });
   
+*/
