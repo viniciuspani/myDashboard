@@ -8,15 +8,21 @@ listaMaterial.forEach((material) => {
   materialSelect.options[materialSelect.options.length] = option;
 });
 
+function validarFormMat() {
+  return $('#nomeAluno').valid() &&
+         $("#valorGastar").valid() &&
+         $("#quantidadeMaterial").valid() &&
+         $("#precoMaterial").valid();         
+}
 
-var nomeAlunoMat = document.getElementById('nomeAlunoMat');
-var valorGastar = document.getElementById('valorGastar');
+const nomeAlunoMat = document.getElementById('nomeAlunoMat');
+const valorGastar = document.getElementById('valorGastar');
 
 
 $(function(){
 
-  $("nomeAlunoMat").focusin(function(){
-    
+  $("nomeAlunoMat" && "valorGastar").focusout(function(){
+    if ($("adicionarDados"))
 
   });
 
