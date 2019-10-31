@@ -8,11 +8,11 @@ listaMaterial.forEach((material) => {
   materialSelect.options[materialSelect.options.length] = option;
 });
 
-const nomeAlunoMat = document.getElementById('nomeAlunoMat');
-const valorGastar = document.getElementById('valorGastar');
+const nomeAlunoMat = document.getElementById('#nomeAlunoMat');
+const valorGastar = document.getElementById('#valorGastar');
 
 function validarFormMat() {
-  if( $('#nomeAluno').valid() &&
+  if( $('#nomeAlunoMat').valid() &&
          $("#valorGastar").valid()){
           $('#adicionarDados').attr('disabled', false);
          }else
